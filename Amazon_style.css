@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: space-evenly;
 }
+
 .nav-logo {
     height: 50px;
     width: 100px;
@@ -29,7 +30,7 @@
 }
 
 .border:hover {
-    border:  1.5px solid white;
+    border: 1.5px solid white;
 }
 
 /* box 2 */
@@ -285,38 +286,157 @@ ul a {
     text-align: center;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Responsive Styles */
+@media only screen and (max-width: 1200px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
     }
+
+    .nav-logo, .navSearch, .navFlag, .nav-signin, .nav-return, .nav-cart {
+        margin-bottom: 10px;
+    }
+
     .navSearch {
         width: 100%;
-        margin-top: 10px;
     }
+
     .panel {
         flex-direction: column;
+        align-items: flex-start;
     }
+
+    .panel-ops, .panel-deals {
+        width: 100%;
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .box {
+        width: 48%;
+    }
+
     .shop-section {
         flex-direction: column;
-        align-items: center;
     }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .nav-logo {
+        margin-bottom: 10px;
+    }
+
+    .navSearch {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .panel {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .panel-ops {
+        width: 100%;
+        font-size: 0.9rem;
+        text-align: left;
+        padding-left: 10px;
+    }
+
     .box {
-        width: 80%;
-        margin: 10px 0;
+        width: 90%;
+        margin-bottom: 15px;
     }
+
+    .box-image {
+        height: 250px;
+    }
+
+    .hero-message {
+        font-size: 0.75rem;
+    }
+
     .foot-panel2 {
         flex-direction: column;
-        align-items: center;
-        height: auto;
+        align-items: flex-start;
     }
-    .foot-panel3 {
-        flex-direction: column;
-        justify-content: flex-start;
-        height: auto;
+
+    .foot-panel2 ul {
+        margin-top: 20px;
     }
+
     .foot-panel4 {
-        text-align: center;
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .pages {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar {
+        height: auto;
+        padding: 10px 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-logo {
+        margin-bottom: 10px;
+    }
+
+    .navSearch {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .panel {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .panel-ops, .panel-deals {
+        width: 100%;
+        text-align: left;
+    }
+
+    .box {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .hero-section {
+        height: 250px;
+        background-size: cover;
+    }
+
+    .hero-message {
+        font-size: 0.7rem;
+    }
+
+    .foot-panel2 {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .foot-panel4 {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .pages {
+        font-size: 0.65rem;
+    }
+
+    .copyright {
+        font-size: 0.65rem;
     }
 }
